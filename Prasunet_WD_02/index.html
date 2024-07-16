@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <div class="container">
+        <div class="clock">
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="hand millisecond-hand"></div>
+        </div>
+        <div class="timer-Display" id="time-display">
+            00 : 00 : 00 : 00
+        </div>
+        <ul class="laps" id="laps"></ul>
+        <div class="buttons">
+            <button id="startTimer" class="neon-button" onclick="start()">Start</button>
+            <button id="pauseTimer" class="neon-button" onclick="pause()">Pause</button>
+            <button id="resetTime" class="neon-button" onclick="reset()">Reset</button>
+            <button id="restartTimer" class="neon-button" onclick="restart()">Restart</button>
+            <button id="lap" class="neon-button" onclick="lap()">Lap</button>
+            <button id="resetLap" class="neon-button" onclick="resetLap()">Reset Laps</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
